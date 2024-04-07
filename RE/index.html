@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@2.x.x/dist/alpine.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="bg-[#0A0A0A] top-0 fixed z-50 w-full" id="navbar">
+        <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-2 m-0">
+                <img src="./img/logo.svg" class="h-3 sm:h-4 md:h-4 lg:h-5" alt="Logo" />
+            </a>
+
+            <div class="ml-auto lg:block hidden absolute lg:relative bg-[#0A0A0A] lg:bg-current mt-[545px] lg:mt-0 w-full lg:w-auto left-0"
+                id="menu">
+                <ul class=" lg:flex ">
+                    <li class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 lg:text-sm lg:font-bold sm-menu">
+                        <a href="">Motorcycles</a>
+                    </li>
+                    <li
+                        class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 relative group d-down lg:text-sm lg:font-bold sm-menu">
+                        <a href="" class="flex">Shop The Look<svg class="w-2.5 h-2.5 ms-2.5 mt-2 d-up"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                        <ul class="absolute top-7 left-0 hidden lg:group-hover:block w-40 bg-black ">
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Genuine Motorcycles Accessories</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Apparel</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 relative group d-down lg:text-sm lg:font-bold sm-menu">
+                        <a href="" class="flex">Service<svg class="w-2.5 h-2.5 ms-2.5 mt-2 d-up" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                        <ul class="absolute top-7 left-0 hidden lg:group-hover:block w-40 bg-black">
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Overview</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Service Cost Calculato</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Book a Service</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Service History</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 relative group d-down lg:text-sm lg:font-bold sm-menu">
+                        <a href="" class="flex">Rides<svg class="w-2.5 h-2.5 ms-2.5 mt-2 d-up" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                        <ul class="absolute top-7 left-0 hidden lg:group-hover:block w-40 bg-black">
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Rides and Events</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Rentals</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 relative group d-down lg:text-sm lg:font-bold sm-menu">
+                        <a href="" class="flex">Our World<svg class="w-2.5 h-2.5 ms-2.5 mt-2 d-up" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                        <ul class="absolute top-7 left-0 hidden lg:group-hover:block w-40 bg-black">
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Overview</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">Custom World</a>
+                            </li>
+                            <li class="my-2 px-4 text-white hover:text-[#d1291c]">
+                                <a href="">RE Appt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 lg:text-sm lg:font-bold sm-menu">
+                        <a href="">Support</a>
+                    </li>
+                    <li class="text-white hover:text-[#d1291c] mx-1 px-2 py-2 lg:text-sm lg:font-bold sm-menu">
+                        <a href="">Locate Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <ul class="flex">
+                    <li class="text-white mx-1 py-2 text-sm font-bold">
+                        <a href="" class="flex">Login<svg class="w-2.5 h-2.5 ms-2.5 mt-2 d-up" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                    </li>
+                    <li class="text-white mx-1 py-2 text-sm font-bold">
+                        <img src="./img/search.svg" alt="" class="h-6 w-6" onclick="search()">
+                        <div id="searchbox" class="hidden">
+                            <input type="text" placeholder="Search"
+                                class="absolute right-0 w-[100%] md:w-[80%] h-10 px-4 py-2 text-sm font-medium text-white bg-gray-500 rounded top-4">
+                            <span><img src="./img/search.svg" alt="" class="h-6 w-6 right-5 absolute top-6"
+                                    onclick="search()"></span>
+                        </div>
+                    </li>
+                    <li class="text-white mx-1 py-2 text-sm font-bold">
+                        <a href="" class="flex"><img src="./img/india-fl.png" alt="404" class="h-7 w-7"><Span class="mt-1 ml-1"> En</Span><svg
+                                class="w-2.5 h-2.5 ms-2.5 mt-2 d-up" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <button class="lg:hidden ml-3" onclick="toggleMenu()">
+                <img src="./img/hamburger.svg" id="menuOpenIcon" alt="404" class="h-8 w-8">
+                <img src="./img/close.svg" id="menuCloseIcon" alt="404" class="h-8 w-8 hidden">
+            </button>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <!-- body-slider -->
+    <div class="relative h-[700px]">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/akash-gowda-QAZVWQN3Jao-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/keerthi-v-sOhU2gKGj0g-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/lino-C2SzUyg3PPQ-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/rohan-Fiq-gmcq_V8-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/rohan-NtY9zY4o2gA-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/vantage-point-photographers-bQh2o6daT-k-unsplash.jpg"
+                        alt="404">
+                </div>
+                <div class="swiper-slide"><img src="./img/akash-gowda-QAZVWQN3Jao-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/keerthi-v-sOhU2gKGj0g-unsplash.jpg" alt="404"></div>
+                <div class="swiper-slide"><img src="./img/lino-C2SzUyg3PPQ-unsplash.jpg" alt="404"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- body-slider -->
+
+    <!--navbar2-->
+
+    <div class="bg-[#212121] sticky top-0">
+        <div class="flex items-center justify-between mx-auto px-4 text-white">
+            <h4 class="text-xl font-bold mr-20">Motorcycles</h4>
+            <ul class="flex w-full px-3 py-4 overflow-x-auto text-sm" id="bikeList">
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap active">Shotgun 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">New Himalayan</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Bullet 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Super Meteor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Hunter 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Scram 411</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Classic 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Meteor 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Interceptor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Continental GT</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Meteor 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Interceptor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Continental GT</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--navbar2-->
+
+    <!--Bike list-->
+
+    <div>
+        <img src="./img/shotgun-650.webp" alt="404" class="w-full h-fit">
+    </div>
+
+    <!--Navbar3-->
+
+    
+    <div class="bg-[#212121] sticky top-0">
+        <div class="flex items-center justify-between mx-auto px-4 text-white">
+            <h4 class="text-xl font-bold mr-20">Performance</h4>
+            <ul class="flex w-full px-3 py-4 overflow-x-auto text-sm" id="bikeList">
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap active">Shotgun 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">New Himalayan</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Bullet 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Super Meteor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Hunter 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Scram 411</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Classic 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Meteor 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Interceptor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Continental GT</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Meteor 350</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Interceptor 650</li>
+                <li class="border-r-2 px-4 font-bold whitespace-nowrap">Continental GT</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--navbar2-->
+
+    <!--Bike list-->
+
+    <div>
+        <img src="./img/shotgun-650.webp" alt="404" class="w-full h-fit">
+    </div>
+
+    <!--Bike list-->
+
+    <!-- footer -->
+
+    <div class="bg-[#E5E3E3]">
+        <div class="sm:flex gap-5 md:justify-end py-4 justify-center">
+            <p class="content-center text-center">Join the conversation</p>
+            <div class="flex gap-5 md:justify-end justify-center">
+                <img src="./img/facebook.svg" alt="FB" class="h-9 w-9">
+                <img src="./img/twitterx.svg" alt="X" class="h-9 w-9">
+                <img src="./img/youtube.svg" alt="youtube" class="h-10 w-10">
+                <img src="./img/instagram.svg" alt="insta" class="h-9 w-9">
+                <img src="./img/linkedin.svg" alt="in" class="h-9 w-9 mr-3">
+            </div>
+        </div>
+
+        <hr class="border-[#bababa] mx-7 mb-10">
+        <div
+            class="mx-8 grid lg:grid-rows-1 lg:grid-cols-7 md:grid-rows-2 md:grid-cols-4 footer-text md:justify-center sm:left-0">
+            <div>
+                <h5 class="text-xl font-bold flex"
+                    onclick="footDropdown('Motorcycles','Motorcycles-arow','Motorcycles-color')" id="Motorcycles-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="Motorcycles-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    Motorcycles
+                </h5>
+                <div class="hidden md:block" id="Motorcycles">
+                    <p>Shotgun 650</p>textToChange
+
+                    <p>New Himalayan</p>
+                    <p>Bullet 350</p>
+                    <p>Super Meteor 650</p>
+                    <p>Hunter 350</p>
+                    <p>Scram 411</p>
+                    <p>Classic 350</p>
+                    <p>Meteor 350</p>
+                    <p>Interceptor 650</p>
+                    <p>Continental GT</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-xl font-bold flex"
+                    onclick="footDropdown('RidesEvents', 'RidesEvents-arow', 'RidesEvents-color')" id="RidesEvents-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="RidesEvents-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    Rides & Events
+                </h5>
+                <div class="hidden md:block" id="RidesEvents">
+                    <p>Rides</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-xl font-bold flex" onclick="footDropdown('Support','Support-arow','Support-color')"
+                    id="Support-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="Support-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    Support
+                </h5>
+                <div class="hidden md:block" id="Support">
+                    <p>Service Centres</p>
+                    <p>Stores</p>
+                    <p>Owner's Manual</p>
+                    <p>Contact Us</p>
+                    <p>Book a Test Ride</p>
+                    <p>Make It Yours</p>
+                    <p>Become a Dealer</p>
+                    <p>Become a Genuine Parts</p>
+                    <p>Distributor</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-xl font-bold flex" onclick="footDropdown('AboutUs','AboutUs-arow','AboutUs-color')"
+                    id="AboutUs-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="AboutUs-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    About Us
+                </h5>
+                <div class="hidden md:block" id="AboutUs">
+                    <p>Since 1901</p>
+                    <p>About Eicher Motors</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="flex text-xl font-bold"
+                    onclick="footDropdown('NewsMedia','NewsMedia-arow','NewsMedia-color')" id="NewsMedia-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="NewsMedia-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    News & Media
+                </h5>
+                <div class="hidden md:block" id="NewsMedia">
+                    <p>News</p>
+                    <p>Press Releases</p>
+                    <p>Media Kit</p>
+                    <p>Events</p>
+                </div>
+            </div>
+            <div>
+                <h5 class="flex text-xl font-bold" onclick="footDropdown('Careers','Careers-arow','Careers-color')"
+                    id="Careers-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="Careers-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    Careers
+                </h5>
+                <div class="hidden md:block" id="Careers">
+                    <p>Life at Royal Enfield</p>
+                    <p>Careers at Dealership</p>
+                </div>
+            </div>
+            <div>
+                <h5 class=" flex text-xl font-bold"
+                    onclick="footDropdown('OurWorld', 'OurWorld-arow', 'OurWorld-color')" id="OurWorld-color">
+                    <span class="hidden-mobile">
+                    <svg class="w-3 h-3 me-2.5 mt-2" id="OurWorld-arow" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg></span>
+                    Our World
+                </h5>
+                <div class="hidden md:block" id="OurWorld">
+                    <p>Royal Enfield App</p>
+                    <p>Royal Enfield Tripper</p>
+                    <p>Royal Enfield Wingman</p>
+                    <p>Royal Enfield Tripper Dash</p>
+                    <p>Reown</p>
+                    <p>Goa Garage Cafe</p>
+                    <p>Custom World</p>
+                    <p>News and Media</p>
+                    <p>Since 1901</p>
+                    <p>Wallpapers</p>
+                    <p>Forum</p>
+                    <p>Trip Stories</p>
+                </div>
+            </div>
+        </div>
+        <hr class="border-[#bababa] mx-7 mb-5">
+        <div class="lg:flex mx-5">
+            <p class="text-[10px] pb-5 text-center">© 2024. Royal Enfield. | *T&amp;C apply. Images shown here may
+                differ from the actual
+                product.</p>
+            <ul class="flex pb-5 ml-auto text-[10px] justify-center">
+                <li class="border-black border-r-2 px-2">Private Import Policy</li>
+                <li class="border-black border-r-2 px-2">Privacy</li>
+                <li class="border-black border-r-2 px-2">Terms & Conditions</li>
+                <li class="border-black border-r-2 px-2">Cookies</li>
+                <li class="px-2">Sitemap</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
